@@ -60,8 +60,11 @@ void playOrPauseSong(){
 
 
 @override
-Future<void> close(){
-  audioPlayer.dispose();
+Future<void> close() {
+  audioPlayer.positionStream.drain();  // Stop listening to position updates
+  audioPlayer.durationStream.drain();  // Stop listening to duration updates
+  audioPlayer.dispose();  // Dispose the player
   return super.close();
 }
+
 }

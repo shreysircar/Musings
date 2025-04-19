@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music/presentation/home/widgets/videos.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:music/common/helpers/is_dark_mode.dart';
 import 'package:music/common/widgets/button/appbar/app_bar.dart';
@@ -55,14 +56,14 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           SizedBox(
             height:260,
             child: TabBarView(
-              controller: _tabController,
-              children: [
-                
-                const NewsSongs(),
-                Container(),
-                Container(),
-                Container()
-              ],),
+  controller: _tabController,
+  children: [
+    const NewsSongs(),
+    VideosTab(),  // 🎥 NEW: Music Videos Tab
+    Container(),
+    Container(),
+  ],
+),
           ),
 
 const Playlist()
