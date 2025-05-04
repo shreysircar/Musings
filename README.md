@@ -1,4 +1,4 @@
-# musings
+# Musings
 
 🎧 Musings – A Minimal Music Streaming App
 Musings is a sleek and intuitive music streaming app built with Flutter, offering a simple yet enjoyable listening experience. With smooth Firebase authentication and a clean UI, users can explore songs, manage their favorites, and enjoy playback with ease.
